@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro | NomeProjeto</title>
+</head>
+<body id="caixa">
+    <div class="box-formulario">
+        <div class="img-form"><img src="imagens/programacao.svg" alt=""></div>
+        <div class="formulario">
+            <form action="">
+            <div class="caixa-conteudo">
+                <div class="header-f">
+                    <div class="titulo">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <button>Login</button>
+                </div>
+                    <div class="input-form">
+                        <div class="inputs">
+                            <label for="nome">Primeiro nome</label>
+                            <input type="text" name="nome" id="nome" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" name="sobrenome" id="sobrenome" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="celular">Celular</label>
+                            <input type="tel" name="celular" id="celular" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="curso">Curso</label>
+                            <input type="text" name="curso" id="curso" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="ano-curso">Serie / Ano</label>
+                            <input type="number" name="ano-curso" id="ano-curso" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="pw">Senha</label>
+                            <input type="password" name="pw" id="pw" required>
+                        </div>
+                        <div class="inputs">
+                            <label for="pw-confirm">Confirmar senha</label>
+                            <input type="password" name="pw-confirm" id="pw-confirm" required>
+                        </div>
+                    </div>
+                    <div class="generos">
+                        <h3>Genero</h5>
+                            <div class="caixa-genero">
+                                <div class="input-genero">
+                                    <input type="radio" name="sexo" id="sexoMasculino" class="sxMasculino">
+                                    <label for="sexoMasculino">Masculino</label>
+                                </div>
+                                <div class="input-genero">
+                                    <input type="radio" name="sexo" id="sexoFeminino" class="sxFeminino">
+                                    <label for="sexoFeminino">Feminino</label>
+                                </div>
+                                <div class="input-genero">
+                                    <input type="radio" name="sexo" id="sexoOutro" class="sxOutro">
+                                    <label for="sexoOutro">Outros</label>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="autorizacoes">
+                        <div class="notificacoes">
+                            <input type="checkbox" name="notificacoes" id="notificacoes">
+                            <label for="notificacoes">Desejo receber notificações e novidades em meu endereço eletrônico.</label>
+                        </div>
+                        <div class="autorizar">
+                            <input type="checkbox" name="aut" id="aut">
+                            <label for="aut">Li e estou de acordo com o <a href="#">Termo de uso</a> e politica de privacidade.</label>
+                        </div>
+                    </div>
+                    <div class="botao-confirme">
+                        <a href="#"><button>Confirmar cadastro</button></a>
+                    </div>
+                </div>    
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.box-formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    height: 70%;
+    box-shadow: 2px 2px 5px var(--cor-10);
+    border-radius: 4px;
+    background-color: var(--cor-3);
+}
+.img-form{
+    display: flex;
+    text-align: center;
+    background-color: var(--cor-p6);
+    height: 100%;
+    width: 700px;
+    border-radius: 3px 0px 0px 4px;
+    min-width: 100px;
+}
+.caixa-conteudo{
+    
+}
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.header-f{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.input-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.inputs{
+    display: grid;
+    grid-template-columns: 250px;
+    justify-content: center;
+}
