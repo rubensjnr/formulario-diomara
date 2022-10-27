@@ -1,0 +1,45 @@
+.botao-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-login{
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 35px;
+    background-color: var(--cor-p7);
+    box-shadow: 0.5px 0.5px 2px var(--cor-10);
+    transition: 0.4s;
+    margin-right: 12px;
+
+}
+.btn-login:hover{
+    background-color: var(--cor-p3);
+}
+.botao-confirme button{
+    border: none;
+    cursor: pointer;
+    background-color: var(--cor-p7);
+    box-shadow: 0.5px 0.5px 2px var(--cor-10);
+    width: 100%;
+    display: block;
+    padding: 10px 0px;
+    margin-top: 5px;
+    text-align: center;
+    margin: 0 auto;
+    transition: 0.4s;
+}
+.botao-confirme button:hover{
+    background-color: var(--cor-p3)
+}
+.logo-fema img{
+    display: block;
+    width: 60px;
+}
+.termo{
+    transition: 0.2s;
+}
+.termo:hover{
+    color: var(--cor-p3);
+}

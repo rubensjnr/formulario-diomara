@@ -11,7 +11,7 @@ body{
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-h1,h2,h3,h4,ul,blockquote,dd{
+h1,h2,h3,h4,ul,blockquote,dd,select,option{
     margin: 0px;
     padding: 0px;
     list-style: none;

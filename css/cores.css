@@ -21,6 +21,9 @@
     --cor-10: #2e2e2e;
     --cor-11: #111;
     --cor-12: #000;
+    /*cores especiais*/
+    --cor-e1: #000000cc;
+    --cor-e2: #535353cc;
 }
 /* classes de cores primarias */
 .cor-p1{

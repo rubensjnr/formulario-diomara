@@ -1,0 +1,81 @@
+/*tipografias principais*/
+.font-p-p{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.font-p-m{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+}
+.font-p-mm{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+}
+.font-p-m{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.font-p-g{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+}
+.font-p-gg{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+}
+/*tipografias secundarias*/
+.font-s-p{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+.font-s-m{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+}
+.font-s-mm{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+}
+.font-s-m{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+.font-s-g{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.75rem;
+}
+.font-s-gg{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+/*tipografias especiais*/
+.titulo-p{
+    font-size: 2.5rem;
+}
+.titulo-m{
+    font-size: 3rem;
+}
+.titulo-g{
+    font-size: 3.5rem;
+}
+.titulo-gg{
+    font-size: 4rem;
+}
+.negrito-fraco{
+    font-weight: 600;
+}
+.negrito-medio{
+    font-weight: 700;
+}
+.negrito-forte{
+    font-weight: 900;
+}
+.uppercase{
+    text-transform: uppercase;
+}
