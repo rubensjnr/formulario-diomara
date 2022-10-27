@@ -3,7 +3,7 @@
     padding: 0px;
 }
 body{
-    background-image: linear-gradient(to left, var(--cor-p6)45%, var(--cor-p4)70%);
+    background-image: linear-gradient(-90deg, var(--cor-p6)45%, var(--cor-p4)70%);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -20,7 +20,6 @@ a{
     text-decoration: none;
     color: inherit;
 }
-
 label > a{
     font-weight: 700;
 }
