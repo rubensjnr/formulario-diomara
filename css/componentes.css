@@ -22,13 +22,15 @@
     cursor: pointer;
     background-color: var(--cor-p7);
     box-shadow: 0.5px 0.5px 2px var(--cor-10);
-    width: 100%;
+    width: 96%;
     display: block;
     padding: 10px 0px;
     margin-top: 5px;
     text-align: center;
     margin: 0 auto;
     transition: 0.4s;
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 .botao-confirme button:hover{
     background-color: var(--cor-p3)
@@ -42,4 +44,19 @@
 }
 .termo:hover{
     color: var(--cor-p3);
+}
+@media (max-width: 900px){
+
+    .botao-login{
+        padding: 7px 25px;
+    }
+    .botao-login button{
+        padding: 7px 25px;
+        font-size: 0.7rem;
+    }
+
+    .botao-confirme button{
+        padding: 7px 0px;
+        font-size: 0.8rem;
+    }
 }

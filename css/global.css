@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    -webkit-locale: "pt-br";
 }
 body{
     background-image: linear-gradient(-90deg, var(--cor-p6)45%, var(--cor-p4)70%);
@@ -27,3 +28,8 @@ img{
     max-width: 100%;
     display: block;
 }
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(1);
+  }
+

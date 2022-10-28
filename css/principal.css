@@ -1,7 +1,5 @@
 .box-formulario{
     display: flex;
-    width: 1fr;
-    height: 1fr;
     box-shadow: 2px 2px 5px var(--cor-10);
     border-radius: 5px;
 }
@@ -10,7 +8,7 @@
     padding: 16px;
     justify-content: center;
     background-color: var(--cor-p6);
-    width: 40%;
+    width: 1fr;
     border-radius: 5px 0px 0px 5px;
     min-width: 100px;
 }
@@ -22,10 +20,11 @@
     width: 60%;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 0px;
+    padding: 20px 0px;
     background-color: var(--cor-e1);
     visibility: visible;
     align-items: center;
+    border-radius: 0px 5px 5px 0px;
 }
 .titulo-empresa{
     display: flex;
@@ -60,19 +59,21 @@
 }
 .header-f h1{
     position: relative;
-    padding-left: 25px;
+    padding-left: 8px;
 }
 .header-f h1::before{
     content: '';
     display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-image: linear-gradient(45deg, var(--cor-p6)45%, var(--cor-1));
+    width: 95%;
+    height: 3px;
+    background-color: var(--cor-p6);
     position: absolute;
-    margin: 0 auto;
-    left: 0px;
-    top: 16px;
+    left: 8px;
+    bottom: -4px;
+    transition: 0.4s;
+}
+.header-f h1:hover::before{
+    background-color: var(--cor-4);
 }
 .input-form{
     display: grid;
@@ -88,7 +89,7 @@
 }
 .inputs input, .inputs select{
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     border: none;
     text-align: center;
     padding: 5px;
@@ -136,6 +137,205 @@
     cursor: pointer;
 }
 /*medias-responsivo*/
-@media(max-width: 800px){
+@media(max-width: 1300px){
+    .img-form{
+        padding: 12px;
+    }
+    .img-form img{
+        width: 450px;
+    }
+}
+@media(max-width: 1100px){
+    .img-form{
+        padding: 10px;
+    }
+    .img-form img{
+        width: 400px;
+    }
+    .formulario{
+        padding: 15px 0px;
+    }
+    .inputs input, .inputs select{
+        font-size: 1rem;
+        width: 85%;
+    }
+    .inputs select{
+        width: 90%
+    }
+    .input-form,.header-f,.generos,.autorizacoes{
+        margin-left: 10px;
+    }
+    .inputs > label{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width: 1000px){
+    .titulo-empresa h1{
+        font-size: 2rem;
+    }
+    .header-f h1{
+        font-size: 1.25rem;
+    }
 
+    .inputs select, .inputs input{
+        font-size: 0.9rem;
+    }
+    .generos{
+        margin-top: 0px;
+    }
+    .generos h3{
+        font-size: 1.125rem;
+        margin-bottom: 5px;
+    }
+    .caixa-genero{
+        gap: 10px 20px;
+        margin-bottom: 10px;
+    }
+    .input-genero input, .input-genero label{
+        font-size: 0.9rem;
+    }
+    .notificacoes{
+        padding-bottom: 5px;
+    }
+    .autorizar{
+        padding-bottom: 20px;
+    }
+    .autorizar input, .autorizar label, .notificacoes input, .notificacoes label{
+        font-size: 0.9rem;
+    }
+    .input-form{
+        gap: 5px 20px;
+        padding: 10px 0px;
+        padding-bottom: 10px;
+    }
+}
+@media(max-width: 1000px){
+    .titulo-empresa h1{
+        font-size: 2rem;
+    }
+    .header-f h1{
+        font-size: 1.25rem;
+    }
+
+    .inputs select, .inputs input{
+        font-size: 0.9rem;
+    }
+    .generos{
+        margin-top: 0px;
+    }
+    .generos h3{
+        font-size: 1.125rem;
+        margin-bottom: 5px;
+    }
+    .caixa-genero{
+        gap: 10px 20px;
+        margin-bottom: 10px;
+    }
+    .input-genero input, .input-genero label{
+        font-size: 0.9rem;
+    }
+    .notificacoes{
+        padding-bottom: 5px;
+    }
+    .autorizar{
+        padding-bottom: 20px;
+    }
+    .autorizar input, .autorizar label, .notificacoes input, .notificacoes label{
+        font-size: 0.9rem;
+    }
+    .input-form{
+        gap: 5px 20px;
+        padding: 10px 0px;
+        padding-bottom: 10px;
+    }
+}
+@media(max-width: 900px){
+    .img-form{
+        padding: 5px;
+    }
+    .img-form img{
+        width: 300px;
+    }
+    .formulario{
+        padding: 5px 0px;
+        width: 65%;
+    }
+    .input-form{
+        padding-top: 0px;
+    }
+    .inputs input, .inputs select{
+        font-size: 1rem;
+        width: 80%;
+    }
+    .inputs select{
+        width: 85%
+    }
+    .input-form,.header-f,.generos,.autorizacoes{
+        margin-left: 8px;
+    }
+    .titulo-empresa h1, .titulo-empresa img{
+        margin-top: 5px;
+        font-size: 1.75rem;
+    }
+    .inputs select, .inputs input{
+        font-size: 0.8rem;
+    }
+    .input-genero input, .input-genero label{
+        font-size: 0.8rem;
+    }
+    .notificacoes{
+        padding-bottom: 5px;
+    }
+    .autorizar{
+        padding-bottom: 10px;
+    }
+    .autorizar input, .autorizar label, .notificacoes input, .notificacoes label{
+        font-size: 0.8rem;
+    }
+    .input-form{
+        gap: 5px 10px;
+        padding-bottom: 10px;
+    }
+}
+@media(max-width: 700px){
+    .formulario{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .img-form{
+       display: none;
+    }
+}
+@media(max-width: 500px){
+    #caixa{
+        width: auto;
+        height: auto;
+    }
+    .input-form{
+        grid-template-columns: 1fr;
+        margin: 0px 18px 0px 10px;
+    }
+    .inputs select, .inputs input{
+        width: auto;
+        padding-left: 0px;
+    }
+    .header-f h1::before{
+        display: none;
+    }
+}
+@media(max-width: 315px){
+    .header-f{
+        display: flex;
+        grid-template-columns: auto;
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .header-f h1{
+        padding: 0px 5px 0px 5px;
+    }
+    .caixa-genero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
