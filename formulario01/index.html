@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagens/logo-fema.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro | FemaLabs</title>
+</head>
+<body id="caixa">
+        <div class="box-formulario">
+            <div class="img-form">
+                <img src="imagens/programacao.svg" alt="Logo do curso de Js">
+            </div>
+            <div class="formulario cor-1">
+                <a href="#">
+                    <div class="titulo-empresa">
+                        <div class="logo-fema">
+                            <img src="imagens/logo-fema.png" alt="">
+                        </div>
+                        <h1 class="font-p-gg titulo-p negrito-forte">FemaLabs</h1>
+                    </div>
+                </a>
+                <form i="form" daction="">
+                    <div class="header-f">
+                        <div class="font-p-p">
+                            <h1>Cadastre-se<span class="cor-p4">.</span></h1>
+                        </div>
+                        <div class="botao-login">
+                            <button class="btn-login font-p-p negrito-fraco uppercase cor-1" id="btn-login">Login</button>
+                        </div>
+                    </div>
+                        <div class="input-form">
+                            <div class="inputs">
+                                <label for="nome">Primeiro nome</label>
+                                <input type="text" name="nome" id="nome" class="input-user" maxlength="12" required>
+                            </div>
+                            <div class="inputs">
+                                <label for="sobrenome">Sobrenome</label>
+                                <input type="text" name="sobrenome" id="sobrenome" class="input-user" maxlength="20" required>
+                            </div>
+                            <div class="inputs">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" class="input-user" required>
+                            </div>
+                            <div class="inputs">
+                                <label for="celular">Celular</label>
+                                <input type="tel" name="celular" id="celular" class="input-user" required>
+                            </div>
+                            <div class="inputs">
+                                <label for="curso">Curso</label>
+                                <input type="text" name="curso" id="curso" required>
+                            </div>
+                            <div class="inputs">
+                                <label for="ano-escolar">Serie / Ano</label>
+                                <select name="ano-escolar" id="ano-escolar">
+                                    <option value="valor1" selected >1º Ano</option>
+                                    <option value="valor2">2º Ano</option>
+                                    <option value="valor3">3º Ano</option>
+                                    <option value="valor4">4º Ano</option>
+                                    <option value="valor5">5º Ano</option>
+                                    <option value="valor6">Outros</option>
+                                  </select>
+                            </div>
+                            <div class="inputs">
+                                <label for="pw">Senha</label>
+                                <input type="password" name="pw" id="pw" minlength="6" maxlength="12" required>
+                            </div>
+                            <div class="inputs">
+                                <label for="pw-confirm">Confirmar senha</label>
+                                <input type="password" name="pw-confirm" id="pw-confirm" minlength="6" maxlength="12" required>
+                            </div>
+                            <div class="inputs inputs-date">
+                                <label for="dt-nasc">Data de nascimento</label>
+                                <input type="date" name="dt-nasc" id="dt-nasc" class="input-user" required>
+                            </div>
+                            <div class="inputs">
+                                <label for="est-civil">Estado Civil</label>
+                                <select name="est-civil" id="est-civil" class="input-user">
+                                    <option value="valor1" selected>Solteiro</option>
+                                    <option value="valor2">Casado</option>
+                                    <option value="valor3">Outros</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="generos">
+                            <h3 class="font-p-mm">Genero &#9893 </h3>
+                                <div class="caixa-genero font-s-p negrito-fraco">
+                                    <div class="input-genero">
+                                        <input type="radio" name="sexo" id="sexoMasculino" class="sxMasculino">
+                                        <label for="sexoMasculino">Masculino</label>
+                                    </div>
+                                    <div class="input-genero">
+                                        <input type="radio" name="sexo" id="sexoFeminino" class="sxFeminino">
+                                        <label for="sexoFeminino">Feminino</label>
+                                    </div>
+                                    <div class="input-genero">
+                                        <input type="radio" name="sexo" id="sexoOutro" class="sxOutro">
+                                        <label for="sexoOutro">Outros</label>
+                                    </div>
+                                    <div class="input-genero">
+                                        <input type="radio" name="sexo" id="sexoIndefinido" class="sxIndenido">
+                                        <label for="sexoIndefinido">Indefinido</label>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="autorizacoes">
+                            <div class="notificacoes">
+                                <input type="checkbox" name="notificacoes" id="notificacoes">
+                                <label for="notificacoes">Receber notificações e novidades em meu endereço eletrônico.</label>
+                            </div>
+                            <div class="autorizar">
+                                <input type="checkbox" name="aut" id="aut">
+                                <label for="aut">Li e estou de acordo com o <a class="cor-p5 termo" href="#">Termo de uso</a>.</label>
+                            </div>
+                        </div>
+                        <div class="botao-confirme">
+                            <button class="negrito-fraco font-p-p cor-1"><a href="#"></a>Confirmar cadastro</a></button>
+                        </div>
+                    </div>    
+                </form>
+            </div>
+        </div>
+</body>
+</html>

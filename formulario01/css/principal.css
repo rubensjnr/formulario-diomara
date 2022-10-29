@@ -1,0 +1,209 @@
+.box-formulario{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+}
+.img-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1fr;
+    height: 100vh;
+    min-width: 100px;
+    z-index: 2;
+}
+.img-form img{
+    width: 600px;
+}
+.formulario{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cor-e1);
+    align-items: center;
+}
+.titulo-empresa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.titulo-empresa h1{
+    position: relative;
+}
+.titulo-empresa h1::after{
+    content: '';
+    display: block;
+    width: 15%;
+    height: 5px;
+    background-image: linear-gradient(to right, var(--cor-10), var(--cor-p4));
+    border-radius: 2px;
+    position: absolute;
+    transition: 0.3s;
+}
+.titulo-empresa h1:hover::after{
+    width: 100%;
+}
+.header-f{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px ;
+    padding: 20px 20px 20px 0px;
+}
+.header-f h1{
+    position: relative;
+}
+.header-f h1::before{
+    content: '';
+    display: block;
+    width: 95%;
+    height: 3px;
+    background-color: var(--cor-p6);
+    position: absolute;
+    bottom: -2px;
+    transition: 0.4s;
+}
+.header-f h1:hover::before{
+    background-color: var(--cor-4);
+}
+.input-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 30px;
+    padding: 10px 0px;
+    padding-bottom: 20px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.inputs input, .inputs select{
+    display: flex;
+    flex-direction: row-reverse;
+    border: none;
+    text-align: center;
+    padding: 5px;
+    border-left: 2px solid var(--cor-p6);
+    border-bottom: 2px solid var(--cor-p6);
+    background-color: var(--cor-e2);
+    color: var(--cor-1);
+    width: 90%;
+    font-family: 'Roboto', 'Poppins', sans-serif;
+    font-size: 1.125rem;
+}
+.inputs select{
+    width: 90%
+}
+.inputs label{
+    padding-left: 5px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+.generos{
+    margin-top: 10px;
+}
+.generos h3{
+    margin-bottom: 20px;
+}
+.caixa-genero{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px 20px;
+    margin-bottom: 20px;
+}
+.input-genero input, .input-genero label{
+    cursor: pointer;
+}
+.autorizacoes{
+    max-width: calc(100% - 10px);
+    padding: 5px 0px;
+ }
+.notificacoes{
+    padding-bottom: 5px;
+}
+.autorizar{
+    padding-bottom: 20px;
+}
+.autorizar input, .autorizar label, .notificacoes input, .notificacoes label{
+    cursor: pointer;
+}
+/*medias-responsivo*/
+@media(max-width: 900px){
+    .box-formulario{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .formulario{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        gap: 20px;
+        padding-top: 35px;
+    }
+    .img-form{
+                  height: 300px;
+    } 
+    .img-form img{
+          height: 250px;
+    }
+}
+@media(max-width: 500px){
+    .inputs input, .inputs select{
+        font-weight: 700;
+    }
+    .header-f{
+        padding-left: 15px;
+    }
+    .formulario{
+        height: 100%;
+    }
+    .input-form{
+        grid-template-columns: 1fr;
+        margin: 0px 18px 0px 10px;
+    }
+    .inputs select, .inputs input{
+        width: auto;
+        padding-left: 0px;
+    }
+    .header-f h1::before{
+        display: none;
+    }
+    .generos h3{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .autorizacoes{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .img-form{
+        height: 200px;
+    }
+    .img-form img{
+        height: 180px;
+    }	  
+}
+@media(max-width: 400px){
+    .header-f{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .header-f h1{
+        padding: 0px 5px 0px 5px;
+    }
+    .caixa-genero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+}

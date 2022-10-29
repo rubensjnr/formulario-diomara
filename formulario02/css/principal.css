@@ -156,7 +156,6 @@
         padding: 15px 0px;
     }
     .inputs input, .inputs select{
-        font-size: 1rem;
         width: 85%;
     }
     .inputs select{
@@ -165,9 +164,6 @@
     .input-form,.header-f,.generos,.autorizacoes{
         margin-left: 10px;
     }
-    .inputs > label{
-        font-size: 0.8rem;
-    }
 }
 @media(max-width: 1000px){
     .titulo-empresa h1{
@@ -176,7 +172,6 @@
     .header-f h1{
         font-size: 1.25rem;
     }
-
     .inputs select, .inputs input{
         font-size: 0.9rem;
     }
@@ -216,7 +211,6 @@
     .header-f h1{
         font-size: 1.25rem;
     }
-
     .inputs select, .inputs input{
         font-size: 0.9rem;
     }
@@ -249,7 +243,7 @@
         padding-bottom: 10px;
     }
 }
-@media(max-width: 900px){
+@media(max-width: 900px){	
     .img-form{
         padding: 5px;
     }
@@ -264,7 +258,6 @@
         padding-top: 0px;
     }
     .inputs input, .inputs select{
-        font-size: 1rem;
         width: 80%;
     }
     .inputs select{
@@ -277,11 +270,14 @@
         margin-top: 5px;
         font-size: 1.75rem;
     }
-    .inputs select, .inputs input{
+    .inputs label{
+        font-size: 1.1rem;	
+    }
+    .inputs select, .inputs input,{
         font-size: 0.8rem;
     }
     .input-genero input, .input-genero label{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .notificacoes{
         padding-bottom: 5px;
@@ -290,7 +286,7 @@
         padding-bottom: 10px;
     }
     .autorizar input, .autorizar label, .notificacoes input, .notificacoes label{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .input-form{
         gap: 5px 10px;
@@ -310,6 +306,11 @@
     #caixa{
         width: auto;
         height: auto;
+    }
+    .inputs input, .inputs select{
+    background-color: var(--cor-5);
+    color: var(--cor-12);
+    font-weight: 700;
     }
     .input-form{
         grid-template-columns: 1fr;
